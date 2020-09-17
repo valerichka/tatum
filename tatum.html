@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <title>TATUM</title>
+      
+      
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+      
+      <link rel="stylesheet" href="css/codemirror.css">
+      <link rel="stylesheet" href="css/ayu-mirage.css">
+      <link rel="stylesheet" href="css/tatum.css">
+      
+
+  </head>
+  <body onclick="" onscroll="NavbarFixed()">
+     
+          <!-- start navbar-->
+          
+          <nav class="navbar" id="nav">
+          
+              
+              <div class="container">
+                  
+                  <div class="logo"><a href="#"><img loading='lazy' src="images/Logo.svg"></a></div>
+                  
+                  <div class="nav-uls bg-screen">
+                  
+                      <ul class=" nav-list">
+                  
+                      <li class="nav-link">Product
+                      
+                          <div class="dropdown-list">
+                          
+                              <ul class="nav-dropdown">
+                                <li class="dropdown-link"><a href="#">Lorem</a></li>
+                                  <li class="dropdown-link"><a href="#">Ipsum</a></li>
+                                  <li class="dropdown-link"><a href="#">Dolor</a></li>
+                                  <li class="dropdown-link"><a href="#">Sit</a></li>
+                                  <li class="dropdown-link"><a href="#">Lorem</a></li>
+                                  <li class="dropdown-link"><a href="#">Lorem</a></li>
+                              </ul>
+                              
+                          </div>
+                          
+                      </li>
+                      <li class="nav-link">Case Studies
+                      
+                          <div class="dropdown-list">
+                          
+                              <ul class="nav-dropdown">
+                                <li class="dropdown-link"><a href="#">Lorem</a></li>
+                                  <li class="dropdown-link"><a href="#">Ipsum</a></li>
+                                  <li class="dropdown-link"><a href="#">Dolor</a></li>
+                                  <li class="dropdown-link"><a href="#">Sit</a></li>
+                                  <li class="dropdown-link"><a href="#">Lorem</a></li>
+                                  <li class="dropdown-link"><a href="#">Lorem</a></li>
+                              </ul>
+                              
+                          </div>
+                          
+                      </li>
+                      <li class="nav-link">For Developers
+                      
+                          
+                          <div class="dropdown-list">
+                          
+                              <ul class="nav-dropdown">
+                                <li class="dropdown-link"><a href="#">Lorem</a></li>
+                                  <li class="dropdown-link"><a href="#">Ipsum</a></li>
+                                  <li class="dropdown-link"><a href="#">Dolor</a></li>
+                                  <li class="dropdown-link"><a href="#">Sit</a></li>
+                                  <li class="dropdown-link"><a href="#">Lorem</a></li>
+                                  <li class="dropdown-link"><a href="#">Lorem</a></li>
+                              </ul>
+                              
+                          </div>
+                      </li>
+                      <li class="nav-link"><a href="#">Contact Us</a>
+                      </li>
+                      
+                  </ul>
+                  
+                  <ul class="nav-start ml-auto">
+                  
+                      <li>
+                      
+                          <div onclick="showSearchInp()" class="search-nav">
+                      
+                              <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In  -->
+<svg loading='lazy' id='searchIcon' class='search-icon' version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#1C1E4F;}
+</style>
+<defs>
+</defs>
+<path class="st0" d="M7.4,14.8C3.3,14.8,0,11.5,0,7.4C0,3.3,3.3,0,7.4,0c4.1,0,7.4,3.3,7.4,7.4C14.8,11.5,11.5,14.8,7.4,14.8z
+	 M7.4,1.1c-3.5,0-6.3,2.8-6.3,6.3s2.8,6.3,6.3,6.3s6.3-2.8,6.3-6.3S10.9,1.1,7.4,1.1z M12.9,12.1l5.1,5.1L17.2,18l-5.1-5.1
+	L12.9,12.1z"/>
+</svg>
+
+                              <input type="text" id="searchInp" class="search-inp disp-no" placeholder="search">
+                          
+                          </div>
+                          
+                      </li>
+                      
+                      <li class="login">  
+                          <button class="login-btn nav-link"><a href="#">Log In</a></button>
+                      </li>
+                      
+                      <li class="start-free">
+                          <button class="main-btn">Start for free</button>
+                      </li>
+                      
+                      
+                  </ul>
+                  
+                  
+                  </div>
+                  
+                  <div class="md-screen ml-auto">
+                  <img onclick="collapseClassToggle()" src="images/Icon%20Menu.svg" class="icon-menu" loading='lazy'>
+                  
+                      
+                      
+                  </div>
+              
+                  
+              </div>
+              
+              <div class="collapse-menu" id="collapseMenu">
+              
+                  <div class="search-input">
+                  
+                      <img loading='lazy' src="images/ei_search.svg" class="search-icon">
+                      <input type="text" class="the-inp" placeholder="search">
+                      
+                  </div>
+                  
+              
+                  <ul class="nav-dropdown">
+                                <li class="dropdown-link"><a href="#">Lorem</a></li>
+                                  <li class="dropdown-link"><a href="#">Ipsum</a></li>
+                                  <li class="dropdown-link"><a href="#">Dolor</a></li>
+                                  <li class="dropdown-link"><a href="#">Sit</a></li>
+                                  <li class="dropdown-link"><a href="#">Lorem</a></li>
+                                  <li class="dropdown-link"><a href="#">Lorem</a></li>
+                              </ul>
+                  
+              </div>
+          
+          </nav>
+          
+          <!-- end navbar -->
+
+      <!-- start hero banner -->
+      
+      <div class="hero-banner sec-background" id="heroBanner">
+        <div class="container all-height">
+          
+            <div class="each-news slideActive all-height">
+                <div class="row all-height">
+                <div class="col-md-6 text-me-center my-auto">
+                    <div class="read-forbes">
+                        <span class="small-title">NEWS</span>
+                        <span class="small-text each-sm-news slideActive">Lorem ipsum dolor sit amet, consectetur adipiscing 1 <a href="#">read in Forbes <img loading='lazy' src="images/Group.svg"></a></span>
+                        
+                        <span class="small-text each-sm-news">Lorem ipsum dolor sit amet, consectetur adipiscing 2 <a href="#">read in Forbes <img loading='lazy' src="images/Group.svg"></a></span>
+                        
+                        <span class="small-text each-sm-news">Lorem ipsum dolor sit amet, consectetur adipiscing 3 <a href="#">read in Forbes <img loading='lazy' src="images/Group.svg"></a></span>
+                    </div>
+                    
+                    <h1 class="news-title">Enterprise blockchain made easy</h1>
+                    
+                    <p class="md-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    
+                    <div class="mainSec-btns news-btns">
+                    
+                        <button class="main-btn">Start for free</button>
+                        <button class="sec-btn">Learn more</button>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col-md-6 text-me-center my-auto">
+                
+                    <img loading='lazy' src="images/tatum_homepage_illustration.svg" class="news-banner">
+                    
+                </div>
+              </div>        
+            </div>
+            
+        </div>        
+            </div>    
+      
+      <!-- end hero banner -->
+      
+      <!-- start code examples -->
+      
+      
+      <div class="code-examples">
+        <div class="container">
+        
+            <div class="code-slide slideActive">
+                    <img loading='lazy' class="codes-bar" src="images/codes-bar.svg">
+                
+                <textarea class="the-code" id="editor0">
+//Make sure you have Node.js installed
+//Run this in your CLI to initialize a web app and follow instructions
+//Lorem ipsum dolor sit
+
+npm i -g @tatumio/tatum-cli
+
+tatum wallet create eth testnet
+{
+“xpub”:
+“xpub6FBe4x97jVDkxrqQ3ad6n9f4ykpTAFfaTztxg7un8mBt4zdH7CXmbZuGWEYXVMjYN
+“xpriv”:
+“xprvA2CHfScDu7fTkNkvwZ66R1iLRiyxknwj6myMsjWAaReuCCJ8ZfDX3manexvZQfqph
+“mnemonic”:
+“reveal chalk balance satoshi first acquire palm verb once barely sele
+}
+                </textarea>
+                
+                <div class="mainSec-btns">
+                    
+                        <button class="main-btn">More code examples1</button>
+                        <button class="sec-btn">Documentation</button>
+                        
+                    </div>
+                
+            </div>
+            
+            <div class="code-slide ">
+                <img loading='lazy' class="codes-bar" src="images/codes-bar.svg">
+                
+                <textarea class="the-code" id="editor1">
+//Make sure you have Node.js installeddvdsvdsvvsd
+//Run this in your CLI to initialize a web app and follow instructions
+//Lorem ipsum dolor sit
+
+npm i -g @tatumio/tatum-cli
+
+
+                </textarea>
+                
+                <div class="mainSec-btns">
+                    
+                        <button class="main-btn">More code examples</button>
+                        <button class="sec-btn">Documentation</button>
+                        
+                    </div>
+                
+            </div>
+            
+            <div class="code-slide">
+                <img loading='lazy' class="codes-bar" src="images/codes-bar.svg">
+                
+                    <textarea class="the-code" id="editor2">
+
+
+npm i -g @tatumio/tatum-cli
+
+tatum wallet create eth testnet
+{
+“xpub”:
+“xpub6FBe4x97jVDkxrqQ3ad6n9f4ykpTAFfaTztxg7un8mBt4zdH7CXmbZuGWEYXVMjYN
+“xpriv”:
+“xprvA2CHfScDu7fTkNkvwZ66R1iLRiyxknwj6myMsjWAaReuCCJ8ZfDX3manexvZQfqph
+“mnemonic”:
+“reveal chalk balance satoshi first acquire palm verb once barely sele
+}
+                </textarea>
+                
+                <div class="mainSec-btns">
+                    
+                        <button class="main-btn">More code examples</button>
+                        <button class="sec-btn">Documentation</button>
+                        
+                    </div>
+                
+            </div>
+         
+            <div class="codeDots">
+        <ul>
+            <li id="code0" class="active code-dots"></li>
+            <li id="code1" class="code-dots"></li>
+            <li id="code2" class="code-dots"></li>
+        </ul>
+    </div>
+
+            
+            <div class="control">
+        <button id="previousCode"><img loading='lazy' src="images/leftVector.svg" class="slide-arrow"></button>
+        <button id="nextCode"><img loading='lazy' src="images/rightVector.svg" class="slide-arrow"></button>
+    </div>
+            
+        </div>
+      </div>
+      
+      <!-- end code examples -->
+      
+      <!-- start powered -->
+      
+      <div class="powered text-center">
+      
+          <div class="container">
+          
+              <h3 class="md-title">Powering the world’s fastest growing companies</h3>
+              
+              <div class="row justify-center logos">
+              
+                  <div class="col-2-4 "> <!-- 2-4 = 2.4 -->
+                    <img loading='lazy' src="images/amazon-seeklogo.com%201.svg">
+                  </div>
+                  
+                  <div class="col-2-4 ">
+                    <img loading='lazy' src="images/google-pay-seeklogo.com%201.svg">
+                  </div>
+                  
+                  <div class="col-2-4 ">
+                    <img loading='lazy' src="images/paypal-seeklogo.com%201.svg">
+                  </div>
+                  
+                  <div class="col-2-4 ">
+                    <img loading='lazy' src="images/Visa%20logo.svg">
+                  </div>
+                  
+                  <div class="col-2-4 ">
+                    <img loading='lazy' src="images/adobe-logo.svg">
+                  </div>
+                  
+              </div>
+              
+          </div>
+          
+      </div>
+      
+      <!-- end powered -->
+      
+      <!-- start all you need -->
+      
+      <div class="all-you-need sec-background text-center">
+          <div class="container">
+              <img loading='lazy' src="images/dots-style.svg" class="square-first">
+              <img loading='lazy' src="images/dots-style.svg" class="square-sec">
+            <h1 class="section-title">All you need in one API!</h1>
+              <p class="md-text">It's never been easier to develop blockchain apps.<br>Tatum supports unique features enabling you to build blockchain apps in hours.</p>
+              
+              <div class="row cards">
+              
+                  <div class="col-md-4">
+                  
+                      <div class="each-card">
+                        <img  loading='lazy' src="images/api%201.svg" class="card-icon">
+                          <h3 class="card-md-title">Easy to use</h3>
+                          <p class="card-text">Simple API does not required any previous blockchain expertise.<br>Ready to go in hours.</p>
+                          
+                          <a href="#" class="learn-more">Learn more <img  loading='lazy' src="images/small-right-arrow.svg"></a>
+                          
+                      </div>
+                      
+                  </div>
+                  
+                  <div class="col-md-4">
+                  
+                      <div class="each-card">
+                        <img  loading='lazy' src="images/cloud%201.svg" class="card-icon">
+                          <h3 class="card-md-title">Governance</h3>
+                          <p class="card-text">Enterprise ready centralized governance over a decentralized network.</p>
+                          
+                          <a href="#" class="learn-more">Learn more <img  loading='lazy' src="images/small-right-arrow.svg"></a>
+                          
+                      </div>
+                      
+                  </div>
+                  
+                  <div class="col-md-4">
+                  
+                      <div class="each-card">
+                        <img  loading='lazy' src="images/secure%203.svg" class="card-icon">
+                          <h3 class="card-md-title">Security</h3>
+                          <p class="card-text">You own all private keys and they'll never leave your on-premise infrastructure!</p>
+                          
+                          <a href="#" class="learn-more">Learn more <img  loading='lazy' src="images/small-right-arrow.svg"></a>
+                          
+                      </div>
+                      
+                  </div>
+                  
+                  <div class="col-md-4">
+                  
+                      <div class="each-card">
+                        <img  loading='lazy' src="images/blockchain%201.svg" class="card-icon">
+                          <h3 class="card-md-title">Future proof</h3>
+                          <p class="card-text">Not sure what future holds?
+We've got you covered.
+<br>Write once, deploy everywhere.</p>
+                          
+                          <a href="#" class="learn-more">Learn more <img  loading='lazy' src="images/small-right-arrow.svg"></a>
+                          
+                      </div>
+                      
+                  </div>
+                  
+                  <div class="col-md-4">
+                  
+                      <div class="each-card">
+                        <img  loading='lazy' src="images/online-banking%201.svg" class="card-icon">
+                          <h3 class="card-md-title">Scale</h3>
+                          <p class="card-text">Public, private, or cross-chain app? We can always scale beyond blockchain limits.</p>
+                          
+                          <a href="#" class="learn-more">Learn more <img  loading='lazy' src="images/small-right-arrow.svg"></a>
+                          
+                      </div>
+                      
+                  </div>
+                  
+                  <div class="col-md-4">
+                  
+                      <div class="each-card">
+                        <img  loading='lazy' src="images/api%201.svg" class="card-icon">
+                          <h3 class="card-md-title">Compliance</h3>
+                          <p class="card-text">No compromises.<br>
+HIPAA/HITECH, NIST 800-171, PCI DSS, and GDPR compliant.</p>
+                          
+                          <a href="#" class="learn-more">Learn more <img  loading='lazy' src="images/small-right-arrow.svg"></a>
+                          
+                      </div>
+                      
+                  </div>
+                  
+              </div>
+              
+          </div>
+      </div>
+      
+      <!-- end all you need -->
+      
+      <!-- start wrote about us -->
+      
+      <div class="powered wrout-about text-center">
+      
+          <div class="container">
+          
+              <h3 class="md-title">Wrote about us</h3>
+              
+              <div class="row logos">
+              
+                  <div class="col-md-4 "> <!-- 2-4 = 2.4 -->
+                    <img loading='lazy' src="images/techCrunch.svg">
+                  </div>
+                  
+                  <div class="col-md-4 ">
+                    <img loading='lazy' src="images/paperlogo.svg">
+                  </div>
+                  
+                  <div class="col-md-4 ">
+                    <img loading='lazy' src="images/techCrunch.svg">
+                  </div>
+                  
+                  
+              </div>
+              
+          </div>
+          
+      </div>
+      
+      <!-- end wrote about us -->
+      
+      <!-- start what our customers saying -->
+      
+      <div class="customers-saying">
+      
+          
+              <img loading='lazy' src="images/dots-style.svg" class="square-first">
+              <img loading='lazy' src="images/dots-style.svg" class="square-sec">
+              <div class="section-container">
+                <h2 class="blueSlide-title text-center">What our customers saying</h2>
+                  
+                  <div class="all-slides">
+                  
+                  <div class="each-say slideActive">
+                  <div class="row">
+                  
+                      <div class="col-md-6 my-auto">
+                          
+                          <div class="row">
+                            <div class="col-md-4 text-center my-auto">
+                                <img loading='lazy' src="images/Jeff_bezos.jpg" class="cus-image">
+                            </div>
+                              <div class="col-md-8 my-auto">
+                                <p class="slide-text">Jeff Bezos</p>
+                                  <h3 class="cus-job">CEO of Amazon</h3>
+                              </div>
+                              
+                          </div>
+                      
+                          
+                          
+                          
+                      </div>
+                      
+                      <div class="col-md-6 my-auto">
+                      
+                          <p class="slide-text">“Duis tincidunt dui dapibus justo ornare mollis. Sed elementum erat eu dignissim sagittis. Nulla laoreet vitae nulla vel lobortis. Nunc dignissim sagittis feugiat.”</p>
+                          
+                          
+                          <p class="read-case"><a href="#">Read case study <img  loading='lazy' src="images/small-right-arrow-white.svg"></a></p>
+                          
+                      </div>
+                      
+                  </div>
+                 </div>
+                  
+                  <div class="each-say">
+                  <div class="row">
+                  
+                      <div class="col-md-6 my-auto">
+                          
+                          <div class="row">
+                            <div class="col-md-4 text-center my-auto">
+                                <img loading='lazy' src="images/mark%20zuckerberg.jpeg" class="cus-image">
+                            </div>
+                              <div class="col-md-8 my-auto">
+                                <p class="slide-text">mark zuckerberg</p>
+                                  <h3 class="cus-job">CEO of Facebook</h3>
+                              </div>
+                              
+                          </div>
+                      
+                          
+                          
+                          
+                      </div>
+                      
+                      <div class="col-md-6 my-auto">
+                          
+                          
+                          <p class="slide-text">“It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.”</p>
+                      
+                          
+                          <p class="read-case"><a href="#">Read case study <img  loading='lazy' src="images/small-right-arrow-white.svg"></a></p>
+                          
+                      </div>
+                      
+                  </div>
+                 </div>
+                  
+                  <div class="each-say">
+                  <div class="row">
+                  
+                      <div class="col-md-6 my-auto">
+                          
+                          <div class="row">
+                            <div class="col-md-4 text-center my-auto">
+                                <img loading='lazy' src="images/Elon-Musk.jpg" class="cus-image">
+                            </div>
+                              <div class="col-md-8 my-auto">
+                                <p class="slide-text">Elon Musk</p>
+                                  <h3 class="cus-job">CEO of SpaceX</h3>
+                              </div>
+                              
+                          </div>
+                      
+                          
+                          
+                          
+                      </div>
+                      
+                      <div class="col-md-6 my-auto">
+                      
+                          <p class="slide-text">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.”</p>
+                          
+                          <p class="read-case"><a href="#">Read case study <img  loading='lazy' src="images/small-right-arrow-white.svg"></a></p>
+                          
+                      </div>
+                      
+                  </div>
+                 </div>
+                </div>  
+              </div>
+              
+              <div class="saysDots">
+                  <button id="previousSay"><img loading='lazy' src="images/small-left-arrow.svg" class="slide-arrow"></button>
+        <ul>
+            <li id="say0" class="active"></li>
+            <li id="say1"></li>
+            <li id="say2"></li>
+        </ul>
+                  <button id="nextSay"><img loading='lazy' src="images/small-right-arrow.svg" class="slide-arrow"></button>
+    </div>
+
+            
+         
+          
+      </div>
+      
+      <!-- end what our customers saying -->
+      
+      
+      
+      <!-- start Pricing & Plans -->
+      
+      <div class="all-you-need pricing sec-background text-center">
+          <div class="container">
+              <img loading='lazy' src="images/dots-style.svg" class="square-first">
+              <img loading='lazy' src="images/dots-style.svg" class="square-sec">
+            <h1 class="section-title">Pricing &amp; Plans</h1>
+
+              
+              <div class="row justify-center cards">
+              
+                  <div class="col-md-4">
+                  
+                      <div class="each-card">
+                          <h3 class="card-bg-title">For developers</h3>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                          
+                          <h1 class="price-bg">$0</h1>
+                          <p class="card-text">free forever</p>
+                          <button class="main-btn">Start for free</button>
+                          
+                      </div>
+                      
+                  </div>
+                  
+                  <div class="col-md-4">
+                  
+                      <div class="each-card">
+                        <h3 class="card-bg-title">Enterprise</h3>
+                          <p class="card-text">Vestibulum quis lorem eu erat tristique vulputate ac ac sapien.</p>
+                          
+                          <h1 class="section-title">Let’s talk</h1>
+                          <button class="main-btn">Contact us</button>
+                          
+                      </div>
+                      
+                  </div>
+                  
+                  
+                  
+              </div>
+              
+          </div>
+      </div>
+      
+      <!-- end Pricing & Plans -->
+      
+      <!-- start get started -->
+    
+      
+      <div class="get-started">
+            <div class="ready-container">
+                <img loading='lazy' src="images/left-triangle-dots.svg" class="triangle-first">
+              <img loading='lazy' src="images/right-triangle-dots.svg" class="triangle-sec">
+                <div class="row">
+                <div class="col-md-8">
+                    <h2 class="blueSlide-title">Ready to get started?</h2>
+                     <p class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium  nulla, ut lacinia nisl ultricies ac.</p>
+                </div>
+                <div class="col-md-4 text-right my-auto">
+                
+                    <button class="green-btn">Start for free</button>
+                    
+                </div>
+              </div>        
+            </div>  
+      </div>
+      
+      <!-- end get started -->
+      
+      <!-- start blogs -->
+      
+      <div class="blogs">
+        <div class="container">
+            <h1 class="section-title text-center">Read our blog posts</h1>
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#">
+                    <div class="trans-card">
+                        <div class="card-img">
+                        </div>
+                        
+                        <div class="content-card">
+                            <h2 class="blog-title">Starting with a blockchain</h2>
+                            
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium est nulla, ut lacinia nisl ultricies ac consectetur baquir ultricies ac consectetur baquir</p>
+                            
+                            <a href="#" class="learn-more">Learn more <img  loading='lazy' src="images/small-right-arrow.svg"></a>
+                            
+                        </div>
+                        
+                    </div>
+                    </a>    
+                </div>
+                
+                <div class="col-md-4">
+                    <a href="#">
+                    <div class="trans-card">
+                        <div class="card-img">
+                        </div>
+                        
+                        <div class="content-card">
+                            <h2 class="blog-title">Donec ut iaculis nunc</h2>
+                            
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium est nulla, ut lacinia nisl ultricies ac consectetur baquir ultricies ac consectetur baquir</p>
+                            
+                            <a href="#" class="learn-more">Learn more <img  loading='lazy' src="images/small-right-arrow.svg"></a>
+                            
+                        </div>
+                        
+                    </div>
+                        </a>
+                </div>
+                
+                <div class="col-md-4">
+                    <a href="#">
+                    <div class="trans-card">
+                        <div class="card-img">
+                        </div>
+                        
+                        <div class="content-card">
+                            <h2 class="blog-title">Integer venenatis</h2>
+                            
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium est nulla, ut lacinia nisl ultricies ac consectetur baquir ultricies ac consectetur baquir</p>
+                            
+                            <a href="#" class="learn-more">Learn more <img  loading='lazy' src="images/small-right-arrow.svg"></a>
+                            
+                        </div>
+                        
+                    </div>
+                    </a>    
+                </div>
+            </div>
+            
+        </div>
+      </div>
+      
+      <!-- end blogs -->
+      
+      
+      <!-- start subscribe -->
+    
+      
+      <div class="subscribe">
+            <div class="ready-container text-center">
+                <img loading='lazy' src="images/left-triangle-dots.svg" class="triangle-first">
+              <img loading='lazy' src="images/right-triangle-dots.svg" class="triangle-sec">
+                <h2 class="blueSlide-title">Subscribe to our newsletter!</h2>
+                <p class="slide-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+               
+                <form name="validationForm" class="email-validation" id="email-validation">
+                
+                    <input type="email" name="emailInp" class="email-inp" placeholder="Your e-mail address">
+                    <button type="submit" class="green-btn" onclick="ValidateEmail(document.validationForm.emailInp)">Subscribe</button>
+                
+                </form>
+            
+                <h3 id="thank-you"></h3>
+                
+            </div>  
+      </div>
+      
+      <!-- end subscribe -->
+      
+      <!-- start footer -->
+      
+      <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-2-4">
+                <img loading='lazy' src="images/logo-white.svg" class="footer-logo">
+                <div class="social">
+                <img loading='lazy' src="images/linkedIn-logo.svg" class="social-logo"> 
+                <img loading='lazy' src="images/gethub-logo.svg" class="social-logo"> 
+                    <img loading='lazy' src="images/twitter-logo.svg" class="social-logo"> 
+                </div>    
+                </div>
+                <div class="col-2-4">
+                    <p class="col-title footer-link">Product</p>
+                    <p class="footer-link">Lorem ipsum</p>
+                    <p class="footer-link">Vestibulu</p>
+                    <p class="footer-link">Suspendisse</p>
+                    <p class="footer-link">Donec</p>
+                </div>
+                <div class="col-2-4">
+                    <p class="col-title footer-link">For Developers</p>
+                    <p class="footer-link">Nulla laoreet</p>
+                    <p class="footer-link">Quisque</p>
+                    <p class="footer-link">Abfendisse</p>
+                    <p class="footer-link">Sed nec</p>
+                    <p class="footer-link">Nam vestibulum</p>
+                    <p class="footer-link">Donec</p>
+                </div>
+                <div class="col-2-4">
+                    <p class="col-title footer-link">About Us</p>
+                    <p class="footer-link">Nerecon</p>
+                    <p class="footer-link">Paradaca</p>
+                    <p class="footer-link">Vestelamique</p>
+                    <p class="footer-link">Yarkos</p>
+                </div>
+                <div class="col-2-4">
+                    <p class="col-title footer-link">Contact Us</p>
+                    <p class="footer-link">Lorem ipsum</p>
+                    <p class="footer-link">Vestibulu</p>
+                    <p class="footer-link">Suspendisse</p>
+                    <p class="footer-link">Donec</p>
+                </div>
+                
+            </div> 
+            
+            <p class="copyright">© 2019 Tatum Limited. Tatum is registered trademark. All rights reserved.</p>
+        </div>
+      </div>
+      
+      <!-- end footer -->
+    
+    
+    
+      <script src="js/codemirror.js"></script>
+      <script src="js/javascript.js"></script>
+      <script src="js/tatum.js"></script>
+  
+
+  </body>  
+</html>
