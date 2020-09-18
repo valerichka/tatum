@@ -9,6 +9,7 @@
 body{
     font-family: 'Montserrat', sans-serif;
     color: #1C1E4F;
+    overflow-x: hidden;
 }
 
 .container {
@@ -621,6 +622,7 @@ nav .collapse-menu .nav-dropdown li {
     height: 381px;
     font-family: 'Source Code Pro', monospace;
     font-size: 14px;
+    line-height: 21px;
 }
 
 .CodeMirror:before {
@@ -636,6 +638,8 @@ nav .collapse-menu .nav-dropdown li {
 
 .code-examples .mainSec-btns {
     width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content;
     margin: 30px auto;
 }
 
@@ -687,6 +691,8 @@ nav .collapse-menu .nav-dropdown li {
 .codeDots {
     display: none;
     width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content;
     margin: auto;
 }
 
@@ -710,6 +716,8 @@ nav .collapse-menu .nav-dropdown li {
     left: 22%;
     height: 12px;
     width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content;
     top: 10px;
     z-index: 55;
 }
@@ -719,6 +727,8 @@ nav .collapse-menu .nav-dropdown li {
     height: 12px;
     top: 7px;
     width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content;
     padding-left: 25px;
 }
 
@@ -911,6 +921,8 @@ nav .collapse-menu .nav-dropdown li {
     margin: auto;
         margin-top: 25px;
     width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content;
     
 }
 
@@ -1132,6 +1144,8 @@ nav .collapse-menu .nav-dropdown li {
 .footer-logo {
         height: 35px;
     width: max-content;
+    width: -moz-max-content;
+    width: -webkit-max-content;
 }
 
 .social {
