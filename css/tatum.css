@@ -120,6 +120,10 @@ button{
     font-family: 'Montserrat', sans-serif;
 }
 
+.code-examples .sec-btn {
+    max-width: 186px !important;
+}
+
 .sec-btn:hover {
     border: 1px solid #4F37FD;
     color: #4F37FD;
@@ -182,6 +186,7 @@ img {
 .my-auto {
     margin-top: auto !important;
     margin-bottom: auto !important;
+    align-self: center;
 }
 
 .small-title {
@@ -193,6 +198,7 @@ img {
     padding: 5px;
     position: relative;
     top: -5px;
+    
 }
 
 .small-text {
@@ -546,23 +552,29 @@ nav .collapse-menu .nav-dropdown li {
 
 
 .each-sm-news {
-    position: absolute;
+    position: relative;
     opacity: 0;
     z-index: -1;
     width: auto;
-    left: 80px;
     top: 0;
-    -webkit-transition: all .6s ease-in-out;
-    -moz-transition: all .6s ease-in-out;
-    transition: all .6s ease-in-out;
-        
+    -webkit-transition: all 1.2s ease-in-out;
+    -moz-transition: all 1.2s ease-in-out;
+    transition: all 1.2s ease-in-out;
+    margin-left: -216%;
+    display: inherit;
+    float: left; 
 }
 
+.over-hidden {
+        overflow: hidden;
+    display: inline-block;
+    width: 80%;
+    padding-left: 7px;
+}
 
 .each-sm-news.slideActive {
-    display: inline-block !important;
-        position: absolute !important;
-    left: 80px !important;
+    display: inherit !important;
+    margin-left: 0;
 }
 
 
@@ -582,6 +594,11 @@ nav .collapse-menu .nav-dropdown li {
     text-align: left;
     padding-left: 20px; 
       line-height: 21px;
+      left: 0 !important;
+}
+
+.CodeMirror-gutter-wrapper {
+    left: -74px !important;
 }
 
 
@@ -592,6 +609,12 @@ nav .collapse-menu .nav-dropdown li {
 
 .CodeMirror-hscrollbar {
     left: 0 !important;
+    right: 0 !important;
+    outline: none;
+}
+
+.CodeMirror-scrollbar-filler {
+    display: none !important;
 }
 
 .cm-s-ayu-mirage span.cm-variable {
@@ -606,6 +629,7 @@ nav .collapse-menu .nav-dropdown li {
 .cm-s-ayu-mirage .CodeMirror-gutters {
     background: #19192e;
     border-right: 0px;
+        left: 0 !important;
 }
 
 .code-examples {
@@ -641,6 +665,7 @@ nav .collapse-menu .nav-dropdown li {
     width: -moz-max-content;
     width: -webkit-max-content;
     margin: 30px auto;
+    text-align: center;
 }
 
 .code-slide {
@@ -796,6 +821,7 @@ nav .collapse-menu .nav-dropdown li {
 
 .card-icon {
         width: 60px;
+    height: auto;
 }
 
 .card-md-title {
@@ -820,8 +846,6 @@ nav .collapse-menu .nav-dropdown li {
     -moz-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     left: 50%;
 }
 
@@ -923,6 +947,7 @@ nav .collapse-menu .nav-dropdown li {
     width: max-content;
     width: -moz-max-content;
     width: -webkit-max-content;
+        text-align: center;
     
 }
 
@@ -1164,7 +1189,7 @@ nav .collapse-menu .nav-dropdown li {
 .footer-link {
     font-size: 14px;
     margin-bottom: 25px;
-    
+    color: #fff;
 }
 
 .footer-link a{
@@ -1291,8 +1316,10 @@ nav .collapse-menu .nav-dropdown li {
 }
     
     .small-title {
-        top: -3px;
+        top: -10px;
     }
+    
+   
     
     .news-title {
         font-size: 40px;
@@ -1390,6 +1417,10 @@ nav .collapse-menu .nav-dropdown li {
     .container {
     width: 90%;
 }
+    
+    .over-hidden {
+    width: 82%;
+}
 
     .bg-screen {
         display: none;
@@ -1409,7 +1440,7 @@ nav .collapse-menu .nav-dropdown li {
     
     .news-title {
     font-size: 31px;
-    margin: 10px 0 15px;
+    margin: 30px 0 15px;
     line-height: 46px;
 }
     
@@ -1568,6 +1599,10 @@ nav .collapse-menu .nav-dropdown li {
     width: 37%;
     opacity: 0.7;
 }
+    
+    .small-title {
+    top: -10px;
+}
 
     .triangle-first {
     top: -14%;
@@ -1583,11 +1618,7 @@ nav .collapse-menu .nav-dropdown li {
     padding: 70px;
     width: 100%;
 }
-    
-    .each-sm-news.slideActive {
-    left: 60px !important;
-}
-    
+     
     .powered .logos {
     margin-top: 5px;
         justify-content: left;
@@ -1645,9 +1676,14 @@ nav .collapse-menu .nav-dropdown li {
 }
 
     .mainSec-btns .main-btn,.mainSec-btns .sec-btn {
-    width: 100%;
+    width: 100% !important;
     margin: 0 0 10px;
 }
+    
+    .code-examples .sec-btn {
+    max-width: 100% !important;
+}
+
     
     .CodeMirror {
     width: 100%;
@@ -1851,9 +1887,13 @@ nav .collapse-menu .nav-dropdown li {
 }
     
     
+    .small-title {
+    top: -27px;
+}
+    
 
     .navbar .logo {
-    width: 24.5%;
+    width: 35.5%;
 }
     
     .search-input .the-inp {
@@ -1874,7 +1914,7 @@ nav .collapse-menu .nav-dropdown li {
     
     .news-title {
     font-size: 25px;
-    margin: 35px 0 10px;
+    margin: 25px 0 10px;
     line-height: 38px;
 }
     
@@ -1945,10 +1985,14 @@ nav .collapse-menu .nav-dropdown li {
 }
     
     .news-title {
-    margin: 40px 0 10px;
+    margin: 25px 0 10px;
 }
     
     .navbar .logo {
-    width: 30.5%;
+    width: 39.5%;
+}
+    
+    .over-hidden {
+    width: 79%;
 }
 }

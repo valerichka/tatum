@@ -8,6 +8,7 @@ function showSearchInp() {
         icon = document.getElementById("searchIcon");
     element.classList.remove("disp-no");
     icon.classList.add("active");
+    document.getElementById('searchInp').value = '';
 }
 
 function collapseClassToggle() {
@@ -41,11 +42,10 @@ var slide = 0,
             el.classList.remove('slideActive');
         });
         
-        slides[itemToShow].style.left = '0px'; 
         
         setTimeout(function(){
            slides[itemToShow].classList.add('slideActive'); 
-        }, 100);
+        }, 1000);
         
         resetInterval();
     },
@@ -331,6 +331,7 @@ function NavbarFixed() {
     
 }
 
+window.addEventListener('scroll', NavbarFixed);
 ///// adjust customer image size
 
 function CusImg() {
@@ -347,8 +348,7 @@ function CusImg() {
     
 }
 CusImg();
-
-window.onresize = CusImg;
+window.addEventListener('resize', CusImg);
 
 /////// adjust square dots position
 
@@ -365,7 +365,67 @@ function squarePos() {
         
     }
     
+    console.log('ImgWidth = ' + window.innerWidth);
 }
 squarePos();
 
-window.onresize = squarePos;
+
+
+window.addEventListener('resize', squarePos);
+
+/////// adjust code scroll bar position
+
+function vsScrollPos() {
+    'use strict';
+    
+        var vsScroll = document.querySelector('.CodeMirror-vscrollbar'),
+            hsScroll = document.querySelector('.CodeMirror-hscrollbar');
+        
+        
+        vsScroll.style.bottom = hsScroll.offsetHeight - 3 + 'px';
+        
+    
+}
+vsScrollPos();
+
+/// news slider height
+
+function smHeight() {
+    'use strict';
+    
+        var smActive = document.querySelector('.each-sm-news.slideActive'),
+            overHidden = document.querySelector('.over-hidden'),
+            smWidth =  document.querySelector('.small-title'),
+            colWidth = document.querySelector('#heroBanner > div > div > div > div:nth-child(1)');
+            
+        
+    
+    setTimeout(function () {
+        overHidden.style.height = smActive.offsetHeight + 'px';
+    },2000);
+    
+    overHidden.style.width = colWidth.offsetWidth - 100 + 'px';
+        
+    
+}
+smHeight();
+
+window.addEventListener('resize', smHeight);
+
+/// sec button width
+
+function secWidthFun() {
+    'use strict';
+    
+        var secWidth = document.querySelector('.code-examples .mainSec-btns .sec-btn');
+    
+    console.log('secWidth' + secWidth.offsetWidth);
+   
+    document.querySelector('.code-examples .mainSec-btns .sec-btn').style.width = secWidth.offsetWidth  + 'px';
+        
+    
+}
+smHeight();
+
+window.addEventListener('load', secWidthFun);
+window.addEventListener('resize', secWidthFun);
