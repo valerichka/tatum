@@ -362,6 +362,10 @@ nav  .nav-dropdown li {
     transition: all .1s ease-in-out;
 }
 
+nav  .nav-dropdown li a {
+    color: #1C1E4F;
+}
+
 nav  .nav-dropdown li:last-of-type{
     border-bottom: none;
 }
@@ -461,7 +465,7 @@ nav .login {
     width: 100%;
     left: 0;
     top: 52px;
-    padding: 15px 0 0;
+    padding: 20px 0 0;
     height: 0;
     overflow: hidden;
     border-radius: 6px;
@@ -1181,7 +1185,7 @@ nav .collapse-menu .nav-dropdown li {
     
 }
 
-.blogs .learn-more:hover > img {
+.learn-more:hover > img {
         margin-left: 10px;
 }
 
