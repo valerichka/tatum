@@ -30,52 +30,41 @@ window.addEventListener('click', function() {
 
 /// hero banner slider
 
-var slide = 0,
-    slides = document.querySelectorAll('.each-sm-news'),
-    numSlides = slides.length,
+var slideIndex = 0;
+// Tells us which slide we are on
+var currentSlideIndex = 0,
+    
+    slideArray = document.querySelectorAll('.each-sm-news');
 
-    //Functions!!
-    currentSlide = function () {
-        'use strict';
-        var itemToShow = Math.abs(slide % numSlides);
-        [].forEach.call(slides, function (el) {
-            el.classList.remove('slideActive');
-        });
-        
-        
-        setTimeout(function(){
-           slides[itemToShow].classList.add('slideActive'); 
-        }, 1000);
-        
-        resetInterval();
-    },
-    next = function () {
-        'use strict';
-        slide++;
-        currentSlide();
-    },
-    prev = function () {
-        'use strict';
-        slide--;
-        currentSlide();
-    },
-    resetslide = function () {
-        'use strict';
-        var elm = document.querySelector('.slideActive'),
-            newone = elm.cloneNode(true),
-            x = elm.parentNode.replaceChild(newone, elm);
-    },
-    resetInterval = function () {
-        'use strict';
-        clearInterval(autonext);
-        autonext = setInterval(function () {
-            slide++;
-            currentSlide();
-        }, 10000);
-    },
+
+// Navigates to the next slide in the list
+var nextSlide = function (){
+	// Figure out what the next slide is
+	var nextSlideIndex;
+	// If we are at the last slide the next one is the first (zero based)
+	if (currentSlideIndex === (slideArray.length - 1) ) {
+		nextSlideIndex = 0;
+	} else {
+		// Otherwise the next slide is the current one plus 1
+		nextSlideIndex = currentSlideIndex + 1;
+	}	
+	
+	// Setup the next slide and current slide for animations
+	document.getElementById("slide" + nextSlideIndex).style.left = "100%";
+	document.getElementById("slide" + currentSlideIndex).style.left = 0;
+	
+	// Add the appropriate animation class to the slide
+	document.getElementById("slide" + nextSlideIndex).setAttribute("class", "each-sm-news slideInRight");
+	document.getElementById("slide" + currentSlideIndex).setAttribute("class", "each-sm-news slideOutLeft");
+	
+	// Set current slide to the new current slide
+	currentSlideIndex = nextSlideIndex;
+},
+    
     autonext = setInterval(function () {
         'use strict';
-        next();
+        nextSlide();
+        
     }, 5000);
 
 // code merror
@@ -396,13 +385,11 @@ function smHeight() {
         var smActive = document.querySelector('.each-sm-news.slideActive'),
             overHidden = document.querySelector('.over-hidden'),
             smWidth =  document.querySelector('.small-title'),
+            smSlide =  document.querySelector('.each-sm-news'),
             colWidth = document.querySelector('#heroBanner > div > div > div > div:nth-child(1)');
             
         
     
-    setTimeout(function () {
-        overHidden.style.height = smActive.offsetHeight + 'px';
-    },2000);
     
     overHidden.style.width = colWidth.offsetWidth - 100 + 'px';
         
@@ -425,7 +412,47 @@ function secWidthFun() {
         
     
 }
-smHeight();
+secWidthFun();
 
 window.addEventListener('load', secWidthFun);
 window.addEventListener('resize', secWidthFun);
+
+
+/////////////// adjust news slider height
+
+
+var MaxHeight;
+
+function overHiddenHeight() {
+    'use strict';
+    
+    MaxHeight = 0;
+    
+    var i;
+    
+        
+    for (i = 0; i < document.querySelectorAll('.each-sm-news').length; i++) {
+        
+        
+        if (document.querySelectorAll('.each-sm-news')[i].offsetHeight > MaxHeight) {
+            MaxHeight = document.querySelectorAll('.each-sm-news')[i].offsetHeight;
+        }
+    }
+    
+ setTheHeight();       
+    
+}
+
+
+function setTheHeight() {
+    'use strict';
+    
+    document.querySelector('.over-hidden').style.height = MaxHeight + 'px';
+        
+    console.log('MaxHeight = ' + MaxHeight);
+    
+}
+overHiddenHeight();
+
+
+window.addEventListener('resize', overHiddenHeight);
