@@ -16,6 +16,8 @@ function collapseClassToggle() {
     
     var element = document.getElementById("collapseMenu");
     element.classList.toggle("opened");
+    
+    document.querySelector(".icon-menu").classList.toggle("active");
 }
 
 window.addEventListener('click', function() {
@@ -456,3 +458,28 @@ overHiddenHeight();
 
 
 window.addEventListener('resize', overHiddenHeight);
+
+
+////// clear search 
+
+
+function keySearchUp() {
+  var inputtx = document.getElementById("mobile-search");
+    
+    
+    if (inputtx.value.length == 0) { 
+         document.querySelector('.clear-search').classList.add('disp-no');
+    } else {
+         document.querySelector('.clear-search').classList.remove('disp-no');
+    } 	
+}
+
+function clearSearch() {
+  var inputtx = document.getElementById("mobile-search");
+    
+    inputtx.value = '';
+    document.querySelector('.clear-search').classList.add('disp-no');
+    
+}
+
+

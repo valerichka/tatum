@@ -344,13 +344,19 @@ nav li {
     display: inline-block;
 }
 
+.collapse-menu .nav-dropdown {
+    padding-top: 20px;
+}
+
 nav  .nav-dropdown li {
     display: block;
     padding: 0px 30px;
-    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #E0E0E0;
     line-height: 45px;
     font-size: 14px;
     cursor: pointer;
+    
+    color: #1C1E4F;
     -webkit-transition: all .1s ease-in-out;
     -moz-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
@@ -475,7 +481,7 @@ nav .login {
 }
 
 .search-input {
-        width: 85%;
+        width: 83%;
     margin: auto;
     position: relative;
 }
@@ -486,6 +492,16 @@ nav .login {
     left: 7px;
     top: 12px;
 }
+
+.search-input .clear-search{
+    width: 12px;
+    position: absolute;
+    right: 10px;
+    top: 38%;
+    cursor: pointer;
+}
+
+
 
 .search-icon {
     top: 4px;
@@ -502,6 +518,11 @@ nav .login {
 }
 
 
+.icon-menu.active .st0 {
+    fill: #4f37fd;
+}
+
+
 
 
 .search-input .the-inp{
@@ -513,10 +534,11 @@ nav .login {
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     outline: none;
+    padding-right: 27px !important;
 }
 
 nav .collapse-menu .nav-dropdown li {
-    padding: 0px 25px;
+    padding: 0px 8.5%;
 }
 
 /** start hero banner **/
@@ -1962,8 +1984,8 @@ nav .collapse-menu .nav-dropdown li {
     }
     
     .search-input .search-icon {
-    width: 23px;
-    top: 11px;
+    width: 25px;
+    top: 9px;
 }
     
     
