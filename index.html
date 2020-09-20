@@ -22,6 +22,7 @@
           
           <nav class="navbar" id="nav">
           
+              <!--- the desctop version menu ---->
               
               <div class="container">
                   
@@ -141,10 +142,31 @@
                 </svg>
 
                       
+                      <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In  -->
+<svg  onclick="collapseClassToggle()"  class="icon-menu close-menu not-active"  version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="12px" height="12px" viewBox="0 0 12 12" style="enable-background:new 0 0 12 12;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#1C1E4F;}
+</style>
+<defs>
+</defs>
+<path class="st0" d="M1.5,0.2L6,4.7l4.5-4.5c0.1-0.1,0.2-0.1,0.3-0.2S11,0,11.1,0c0.2,0,0.5,0.1,0.7,0.3C11.9,0.4,12,0.7,12,0.9
+	c0,0.1,0,0.2-0.1,0.3c0,0.1-0.1,0.2-0.2,0.3L7.2,6l4.5,4.5c0.2,0.1,0.2,0.4,0.2,0.6c0,0.2-0.1,0.5-0.3,0.7c-0.2,0.2-0.4,0.3-0.7,0.3
+	c-0.1,0-0.2,0-0.3-0.1c-0.1,0-0.2-0.1-0.3-0.2L6,7.3l-4.5,4.5c-0.1,0.1-0.2,0.1-0.3,0.2C1.1,12,1,12,0.9,12c-0.2,0-0.5-0.1-0.7-0.3
+	C0.1,11.6,0,11.3,0,11.1c0-0.1,0-0.2,0.1-0.3c0-0.1,0.1-0.2,0.2-0.3L4.8,6L0.2,1.5C0.1,1.3,0,1.1,0,0.9c0-0.2,0.1-0.5,0.3-0.7
+	C0.4,0.1,0.7,0,0.9,0C1.1,0,1.4,0.1,1.5,0.2z"/>
+</svg>
+
+                      
                   </div>
               
                   
               </div>
+              
+              <!-- -->
+            
+              <!--- the mobile version menu ---->
               
               <div class="collapse-menu" id="collapseMenu">
               
@@ -158,17 +180,42 @@
                   </div>
                   
               
-                  <ul class="nav-dropdown">
+                  <ul class="nav-dropdown parent-menu">
                                 <li class="dropdown-link"><a href="#">Lorem</a></li>
-                                  <li class="dropdown-link"><a href="#">Ipsum</a></li>
-                                  <li class="dropdown-link"><a href="#">Dolor</a></li>
+                      
+                      <!-- the class "drop-menu" is for the elements that has sub menu inside it only -->
+                                  <li class="dropdown-link drop-menu"><a href="#">Ipsum</a>
+                      
+                      
+                                      <ul class="nav-dropdown">
+                                        <li class="dropdown-link"><a href="#">Dolor</a></li>
                                   <li class="dropdown-link"><a href="#">Sit</a></li>
+                                  <li class="dropdown-link"><a href="#">Lorem</a></li>
+                                  <li class="dropdown-link"><a href="#">Lorem</a></li>
+                                      </ul>
+                                      
+                      </li>
+                                  <li class="dropdown-link"><a href="#">Dolor</a></li>
+                                
+                      
+                      <li class="dropdown-link drop-menu"><a href="#">Ipsum</a>
+                      
+                      
+                                      <ul class="nav-dropdown">
+                                        <li class="dropdown-link"><a href="#">Dolor</a></li>
+                                  <li class="dropdown-link"><a href="#">Sit</a></li>
+                                  <li class="dropdown-link"><a href="#">Lorem</a></li>
+                                  <li class="dropdown-link"><a href="#">Lorem</a></li>
+                                      </ul>
+                                      
+                      </li>
+                      
                                   <li class="dropdown-link"><a href="#">Lorem</a></li>
                                   <li class="dropdown-link"><a href="#">Lorem</a></li>
                               </ul>
                   
               </div>
-          
+          <!-- -->
           </nav>
           
           <!-- end navbar -->

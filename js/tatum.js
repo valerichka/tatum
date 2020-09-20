@@ -14,10 +14,16 @@ function showSearchInp() {
 function collapseClassToggle() {
     'use strict';
     
-    var element = document.getElementById("collapseMenu");
+    var element = document.getElementById("collapseMenu"),
+        icon = document.getElementsByClassName("icon-menu");
     element.classList.toggle("opened");
     
-    document.querySelector(".icon-menu").classList.toggle("active");
+    
+    
+    for (var i = 0; i < icon.length; i++) { 
+        icon[i].classList.toggle("not-active");
+    }
+    
 }
 
 window.addEventListener('click', function() {
@@ -482,4 +488,16 @@ function clearSearch() {
     
 }
 
+
+////// add class active to submenu parent 
+
+
+
+var subMenu = document.getElementsByClassName("drop-menu");
+
+for (var i = 0; i < subMenu.length; i++) { 
+    subMenu[i].onclick = function () { 
+        this.classList.toggle('active');
+    }
+}
 

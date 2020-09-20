@@ -338,6 +338,7 @@ nav img{
 
 .nav-list{
     margin-left: 50px;
+    display: flex;
 }
 
 nav li {
@@ -414,7 +415,11 @@ nav  .nav-dropdown li:hover {
 }
 
 .nav-uls {
+        display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-grow: 1;
     flex-basis: auto;
 }
@@ -469,6 +474,7 @@ nav .login {
     height: 0;
     overflow: hidden;
     border-radius: 6px;
+        max-height: 92vh;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -482,6 +488,7 @@ nav .login {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+        overflow: auto;
 }
 
 .search-input {
@@ -522,11 +529,17 @@ nav .login {
 }
 
 
-.icon-menu.active .st0 {
+.icon-menu.not-active  {
+    display: none;
+}
+
+.icon-menu.close-menu .st0{
     fill: #4f37fd;
 }
 
-
+.icon-menu.close-menu {
+    height: 14px;
+}
 
 
 .search-input .the-inp{
@@ -543,6 +556,57 @@ nav .login {
 
 nav .collapse-menu .nav-dropdown li {
     padding: 0px 8.5%;
+}
+
+.collapse-menu li .nav-dropdown {
+    padding-top: 0;
+    background: #fff;
+    width: 0;
+    overflow: hidden;
+    height: 0;
+    margin: 0;
+    -webkit-transition: all .6s ease-in-out;
+    -moz-transition: all .6s ease-in-out;
+    transition: all .6s ease-in-out;
+}
+
+.collapse-menu li.active .nav-dropdown {
+    width: auto;
+    height: auto;
+    margin: 10px -10%;
+}
+
+.collapse-menu li.active .nav-dropdown li {
+        padding: 0px 15.5%;
+}
+
+.collapse-menu li.active:hover {
+    background: #fff;
+}
+
+
+.collapse-menu li.drop-menu:after {
+    content: '';
+        border: solid #1C1E4F;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+        position: absolute;
+    top: 20px;
+    right: 10%;
+}
+
+.collapse-menu li.active.drop-menu:after {
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+.drop-menu {
+    position: relative;
 }
 
 /** start hero banner **/
