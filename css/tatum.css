@@ -565,15 +565,14 @@ nav .collapse-menu .nav-dropdown li {
     overflow: hidden;
     height: 0;
     margin: 0;
-    -webkit-transition: all .6s ease-in-out;
-    -moz-transition: all .6s ease-in-out;
-    transition: all .6s ease-in-out;
+    margin: 10px -10%;
+    width: auto;
+    height: auto;
+    display: none;
 }
 
 .collapse-menu li.active .nav-dropdown {
-    width: auto;
-    height: auto;
-    margin: 10px -10%;
+    display: block;
 }
 
 .collapse-menu li.active .nav-dropdown li {
