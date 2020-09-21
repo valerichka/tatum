@@ -121,7 +121,7 @@ button{
 }
 
 .code-examples .sec-btn {
-    max-width: 186px !important;
+    width: 186px !important;
 }
 
 .sec-btn:hover {
@@ -707,68 +707,37 @@ nav .collapse-menu .nav-dropdown li {
 
 /** code examples **/
 
-  .cm-s-ayu-mirage .CodeMirror-linenumber {
-    color: #fff;
-    padding-right: 33px;
-    text-align: left;
-    padding-left: 20px; 
-      line-height: 21px;
-      left: 0 !important;
-}
-
-.CodeMirror-gutter-wrapper {
-    left: -74px !important;
-}
-
-
-.cm-s-ayu-mirage span.cm-comment {
-    color:  #F0EC74;
-    font-style: normal;
-}
-
-.CodeMirror-hscrollbar {
-    left: 0 !important;
-    right: 0 !important;
-    outline: none;
-}
-
-.CodeMirror-scrollbar-filler {
-    display: none !important;
-}
-
-.cm-s-ayu-mirage span.cm-variable {
-    color: #fff;
-}
-
-.cm-s-ayu-mirage.CodeMirror {
-    background: #19192E;
-    color: #fff;
-}
-
-.cm-s-ayu-mirage .CodeMirror-gutters {
-    background: #19192e;
-    border-right: 0px;
-        left: 0 !important;
-}
-
-.code-examples {
-    margin-top: -61px;
-        padding: 0 0 80px;
-}
-
-.CodeMirror {
+.the-code {
     width: 60%;
     margin: auto;
-    border-radius: 7px;
-    box-shadow: 0px 13px 12px 0px rgb(221 221 221 / 0.5);
-    
-    height: 381px;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 14px;
-    line-height: 21px;
+    padding-top: 31px;
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    -moz-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.08);
+    -webkit-box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.08);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.08);
 }
 
-.CodeMirror:before {
+.code {
+    width: 100%;
+    margin: auto;
+    display: block;
+    overflow: auto;
+    white-space: pre;
+    position: relative;
+    color: #fff;
+    text-align: left;
+    padding: 30px 33px 20px 75px;
+    line-height: 21px;
+    border-radius: 0px 0px 7px 7px;
+    height: 360px;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 14px;
+    background: #19192E;
+}
+
+.upper-bar {
     content: '';
     position: absolute;
     top: 0;
@@ -777,6 +746,23 @@ nav .collapse-menu .nav-dropdown li {
     left: 0%;
     width: 100%;
     z-index: 5;
+}
+
+.code .comment {
+    color: #F0EC74;
+}
+
+.the-code .line-nums {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+
+}
+
+
+.code-examples {
+    margin-top: -61px;
+        padding: 0 0 80px;
 }
 
 .code-examples .mainSec-btns {
@@ -864,20 +850,6 @@ nav .collapse-menu .nav-dropdown li {
     width: -webkit-max-content;
     top: 10px;
     z-index: 55;
-}
-
-.codes-bar img{
-    position: relative;
-    height: 12px;
-    top: 7px;
-    width: max-content;
-    width: -moz-max-content;
-    width: -webkit-max-content;
-    padding-left: 25px;
-}
-
-.CodeMirror-lines {
-    padding: 61px 0 10px;
 }
 
 /** start powered ***/
@@ -979,6 +951,8 @@ nav .collapse-menu .nav-dropdown li {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    position: relative;
+    right: 0;
 }
 
 /** end all you need **/
@@ -1249,7 +1223,7 @@ nav .collapse-menu .nav-dropdown li {
 }
 
 .learn-more:hover > img {
-        margin-left: 10px;
+        right: -5px;
 }
 
 /** **/
@@ -1431,8 +1405,11 @@ nav .collapse-menu .nav-dropdown li {
     
     .main-btn,.sec-btn {
         font-size: 14px;
+        
     }
-  
+  .code-examples .sec-btn {
+    width: 179px;
+}
 
     .search-icon {
     width: 15px;
@@ -1831,8 +1808,8 @@ nav .collapse-menu .nav-dropdown li {
 }
 
     
-    .CodeMirror {
-    width: 100%;
+    .the-code {
+        width: 100%;
     }
     
     .codes-bar {

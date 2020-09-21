@@ -78,15 +78,6 @@ var nextSlide = function (){
 // code merror
 
 
-var i;
-for (i = 0; i < document.querySelectorAll('.code-slide').length; i++) {
-    var editor = CodeMirror.fromTextArea(document.getElementById('editor' + i + ''), {
-        mode: "javascript",
-        theme : "ayu-mirage",
-        lineNumbers: true
-    });
-    editor.save();
-}
 
 
 
@@ -294,23 +285,7 @@ return false;
 
 ///////////////////
 
-function adjustcodeWidth() {
-    'use strict';
-    
-    var codesWidth = document.querySelector('.CodeMirror-sizer').offsetWidth;
-    
-    
-    var ele = document.getElementsByClassName('CodeMirror-sizer');
-    for (var i = 0; i < ele.length; i++ ) {
-        ele[i].style.minWidth = codesWidth + 20 +'px';
-    }
-    
-    
-    
-    
-}
 
-setTimeout(adjustcodeWidth,1000);
 
 ////// make navbar fixed 
 
@@ -372,18 +347,7 @@ window.addEventListener('resize', squarePos);
 
 /////// adjust code scroll bar position
 
-function vsScrollPos() {
-    'use strict';
-    
-        var vsScroll = document.querySelector('.CodeMirror-vscrollbar'),
-            hsScroll = document.querySelector('.CodeMirror-hscrollbar');
-        
-        
-        vsScroll.style.bottom = hsScroll.offsetHeight - 3 + 'px';
-        
-    
-}
-vsScrollPos();
+
 
 /// news slider height
 
@@ -407,23 +371,6 @@ smHeight();
 
 window.addEventListener('resize', smHeight);
 
-/// sec button width
-
-function secWidthFun() {
-    'use strict';
-    
-        var secWidth = document.querySelector('.code-examples .mainSec-btns .sec-btn');
-    
-    console.log('secWidth' + secWidth.offsetWidth);
-   
-    document.querySelector('.code-examples .mainSec-btns .sec-btn').style.width = secWidth.offsetWidth  + 'px';
-        
-    
-}
-secWidthFun();
-
-window.addEventListener('load', secWidthFun);
-window.addEventListener('resize', secWidthFun);
 
 
 /////////////// adjust news slider height
@@ -501,3 +448,25 @@ for (var i = 0; i < subMenu.length; i++) {
     }
 }
 
+
+////// adding line numbers to the code examples
+
+
+var codesCountSlide = document.getElementsByClassName("code-slide");
+
+for (var i = 0; i < codesCountSlide.length; i++) { 
+   
+    var lines = document.getElementById("editor"+ i).textContent.split(/\r\n|\r|\n/).length;
+    
+    console.log('lines'+ i + '=' + lines);
+    
+    for (var x = 0; x < lines; x++) { 
+        var z = x + 1,
+            ul = document.getElementById("list" + i),
+            li = document.createElement("li");
+        
+        li.appendChild(document.createTextNode(""+z+""));
+        ul.appendChild(li);
+    }
+    
+}
