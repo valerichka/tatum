@@ -130,6 +130,15 @@ button{
     font-weight: 500;
 }
 
+.sec-btn::before {
+    display: block;
+    content: attr(title);
+    font-weight: bold;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
 .sec-btn:disabled {
     border: 1px solid #B6B6B6;
     color: #B6B6B6;
@@ -614,6 +623,10 @@ nav .collapse-menu .nav-dropdown li {
     padding: 194px 0 140px;
 }
 
+.hero-banner .sec-btn {
+    width: 154px;
+}
+
 .read-forbes {
     line-height: 1.4;
     margin: 0px 0 10px;
@@ -728,7 +741,7 @@ nav .collapse-menu .nav-dropdown li {
     position: relative;
     color: #fff;
     text-align: left;
-    padding: 30px 33px 20px 75px;
+    padding: 30px 33px 0px 75px;
     line-height: 21px;
     border-radius: 0px 0px 7px 7px;
     height: 360px;
@@ -1409,6 +1422,10 @@ nav .collapse-menu .nav-dropdown li {
     }
   .code-examples .sec-btn {
     width: 179px;
+}
+    
+    .hero-banner .sec-btn {
+    width: 148px;
 }
 
     .search-icon {
