@@ -5,6 +5,8 @@ function clearonload () {
     document.getElementById('lg-submit').setAttribute("type", "button");
 }
 
+clearonload ();
+
 function showSearchInp() {
     'use strict';
     

@@ -1326,6 +1326,7 @@ nav .collapse-menu .nav-dropdown li {
 
 .col-title.footer-link {
     font-weight: 600;
+    font-size: 16px;
 }
 
 .footer-link {
@@ -1381,7 +1382,6 @@ nav .collapse-menu .nav-dropdown li {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    cursor: pointer;
     position: relative;
     top: 0;
     margin-bottom: 30px;
@@ -1435,7 +1435,6 @@ nav .collapse-menu .nav-dropdown li {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    cursor: pointer;
     position: relative;
     top: 0;
     margin-bottom: 30px;
@@ -1459,6 +1458,7 @@ nav .collapse-menu .nav-dropdown li {
 .in-tatum .the-num {
     font-size: 48px;
     color: #4F37FD;
+    font-weight: 600;
 }
 
 .in-tatum .card-md-title {
@@ -1538,7 +1538,7 @@ nav .collapse-menu .nav-dropdown li {
 
 .social-links .social-li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 17px;
     cursor: pointer;
 }
 
@@ -1570,6 +1570,7 @@ nav .collapse-menu .nav-dropdown li {
 .each-member .founder-name{
     cursor: pointer;
         width: max-content;
+    margin: auto;
     -webkit-transition: all .1s ease-in-out;
     -moz-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
@@ -1853,11 +1854,11 @@ width: auto;}
 }
 
 .country-dot {
-    width: 0.4%;
+    width: 0.7%;
     background: #4F37FD;
     border-radius: 50%;
     display: block;
-    height: 1%;
+    height: 1.4049%;
     position: absolute;
 }
 
@@ -1868,8 +1869,8 @@ width: auto;}
     height: 235%;
     border-radius: 50%;
     z-index: 0;
-    left: -65%;
-    top: -70%;
+left: -69%;
+    top: -72%;
     background: rgba(79, 55, 253, 0.3);
     opacity: 0;
 }
@@ -1936,6 +1937,18 @@ width: auto;}
     -moz-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
     cursor: pointer;
+}
+
+.announcement-vector {
+    position: relative;
+    top: 0;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.announcement-vector:hover {
+    top: -7px;
 }
 
 .pre-announcement .section-title:hover,.label-span:hover,.reading-title:hover,.sorts .sort-li:hover {
@@ -2090,7 +2103,7 @@ width: auto;}
 
 .sorts-list .each-sort {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 400;
     padding: 16px 33px;
     line-height: 17px;
     border-bottom: 1px solid #E5E5E5;
@@ -2104,6 +2117,7 @@ width: auto;}
 
 .sorts-list .each-sort.active {
     color: #4F37FD;
+    font-weight: 600;
 }
 
 .close-popup {
@@ -2457,6 +2471,9 @@ width: auto;}
     font-size: 14px;
 }
 
+    .col-title.footer-link {
+    font-size: 15px;
+}
     
     .core-card .core-icon {
     width: 115px;
@@ -2944,10 +2961,14 @@ width: auto;}
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
-    margin-bottom: 25px !important;
+    margin-bottom: 35px !important;
             margin: unset;
         padding: 0 10px;
 }
+    
+    .footer .col-2-4 a:last-child .footer-link{
+        margin-bottom: 5px;
+    }
     
     .read-forbes {
         text-align: left;
@@ -3259,6 +3280,7 @@ width: auto;}
     
     .each-contact {
     padding: 50px 30px;
+        border-radius: 10px;
     margin-bottom: 20px;
 }
     
@@ -3310,11 +3332,11 @@ width: auto;}
 }
     
     .country-dot {
-    width: 1%;
+    width: 1.5%;
     background: #4F37FD;
     border-radius: 50%;
     display: block;
-    height: 2%;
+    height: 3%;
     position: absolute;
 }
 
@@ -3437,6 +3459,29 @@ width: auto;}
     .about-founders .section-title, .our-team .section-title {
     margin-bottom: 40px;
 }
+    
+    .country-dot:after {
+        left: -68%;
+    top: -70%;
+}
+    
+    .flexbin > * {
+    display: none;
+}
+    
+    .flexbin > *:nth-child(1) {
+    display: block;
+}
+    
+    .flexbin > *:nth-child(2) {
+    display: block;
+}
+    
+    .flexbin > *:nth-child(3) {
+    display: block;
+}
+
+
 }
 
 @media(max-width:576px){
@@ -3520,10 +3565,6 @@ width: auto;}
         text-align: center;
 }
     
-    .copyright {
-    font-size: 10px;
-}
-    
    .pricing .col-md-4:first-of-type .each-card {
         margin: 0;
     }
@@ -3548,7 +3589,14 @@ width: auto;}
     .each-member .founder-name {
         width: auto;
         line-height: 24px;
+        margin-bottom: 4px;
     }
+    
+    .country-dot {
+    width: 2%;
+    height: 3.95%;
+}
+
 }
 
 @media(max-width:400px){ 

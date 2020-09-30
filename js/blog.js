@@ -1,5 +1,11 @@
 /* alert , console */
 
+function clearonload () {
+    document.getElementById('searchInp').value = ''; 
+    document.getElementById('lg-submit').setAttribute("type", "button");
+}
+
+clearonload ();
 
 function showSearchInp() {
     'use strict';
@@ -8,7 +14,11 @@ function showSearchInp() {
         icon = document.getElementById("searchIcon");
     element.classList.remove("disp-no");
     icon.classList.add("active");
-    document.getElementById('searchInp').value = '';
+    
+    if (document.getElementById('lg-submit').type == 'button') {
+        document.getElementById('searchInp').value = '';    
+    }
+    
 }
 
 function collapseClassToggle() {
