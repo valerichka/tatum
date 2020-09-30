@@ -68,7 +68,7 @@
                           <div class="dropdown-list">
                           
                               <ul class="nav-dropdown">
-                                <li class="dropdown-link"><a href="#">Lorem</a></li>
+                                <li class="dropdown-link"><a href="#">Lorem Lorem Lorem Lorem</a></li>
                                   <li class="dropdown-link"><a href="#">Ipsum</a></li>
                                   <li class="dropdown-link"><a href="#">Dolor</a></li>
                                   <li class="dropdown-link"><a href="#">Sit</a></li>
@@ -88,9 +88,9 @@
                       <li>
                       
                           <div onclick="showSearchInp()" class="search-nav">
-                      
-                              <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In  -->
-<svg loading='lazy' id='searchIcon' class='search-icon' version="1.1"
+                      <form action="https://tatum.io/search.php?q=stringtosearch?" method="get">
+                        <button id="lg-submit" type="button">
+                          <svg loading='lazy' id='searchIcon' class='search-icon' version="1.1"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
 	 x="0px" y="0px" width="18px" height="18px" viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
 <style type="text/css">
@@ -102,9 +102,11 @@
 	 M7.4,1.1c-3.5,0-6.3,2.8-6.3,6.3s2.8,6.3,6.3,6.3s6.3-2.8,6.3-6.3S10.9,1.1,7.4,1.1z M12.9,12.1l5.1,5.1L17.2,18l-5.1-5.1
 	L12.9,12.1z"/>
 </svg>
+                          </button>   
 
-                              <input type="text" id="searchInp" class="search-inp disp-no" placeholder="search">
-                          
+
+                              <input type="text" name="sitesearch" onkeyup="btnSearchSubmit()" id="searchInp" class="search-inp disp-no" placeholder="search">
+                          </form>
                           </div>
                           
                       </li>
@@ -170,10 +172,15 @@
               
                   <div class="search-input">
                   
-                      <img loading='lazy' src="images/ei_search.svg" class="search-icon">
-                      <input  onkeyup="keySearchUp()" type="text" id="mobile-search" class="the-inp" placeholder="search">
+                      <form  action="https://tatum.io/search.php?q=stringtosearch?" method="get">
+                        <button id="sm-submit" type="button" class="search-icon">
+                          <img loading='lazy' src="images/ei_search.svg">
+                        </button>
+                          <input name='search' onkeyup="keySearchUp()" type="text" id="mobile-search" class="the-inp" placeholder="search">
                       
                       <img loading='lazy' onclick="clearSearch()" src="images/close-icon.svg" class="clear-search disp-no">
+                          
+                      </form>
                       
                   </div>
                   
@@ -820,9 +827,14 @@ HIPAA/HITECH, NIST 800-171, PCI DSS, and GDPR compliant.</p>
                
                 <form name="validationForm" class="email-validation" id="email-validation">
                 
-                    <input type="email" name="emailInp" class="email-inp" placeholder="Your e-mail address">
+                    <div class="enterEmail">
+                        <input type="email" name="emailInp" class="email-inp" placeholder="Your e-mail address">
+                        <span class="notVaild" id="notVaild">The email address you've entered is not valid!</span>
+                    </div>
+                    
                     <button type="submit" class="green-btn" onclick="ValidateEmail(document.validationForm.emailInp)">Subscribe</button>
                 
+                    
                 </form>
             
                 <h3 id="thank-you"></h3>
