@@ -1569,8 +1569,6 @@ nav .collapse-menu .nav-dropdown li {
 
 .each-member .founder-name{
     cursor: pointer;
-        width: max-content;
-    margin: auto;
     -webkit-transition: all .1s ease-in-out;
     -moz-transition: all .1s ease-in-out;
     transition: all .1s ease-in-out;
